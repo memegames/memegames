@@ -4,6 +4,14 @@ import streamlit as st
 st.title("Meme Games")
 st.title("Guess the number")
 
+if st.button("Restart Game 🔄"):
+    # Reset session state variables
+    st.session_state.secret_number = None
+    st.session_state.attempts = 0
+    st.session_state.lives = 0
+    st.session_state.game_over = False
+    st.experimental_rerun()  # Restart the app
+
 #st.header("Set the Range")
 min_value, max_value = st.slider(
     "Select the number range:",
