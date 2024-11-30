@@ -47,12 +47,20 @@ else:
             st.session_state.lives -= 1
             st.warning("Too low! Try again.")
             # Show the image for a wrong guess
-            st.image("https://github.com/memegames/memegames/blob/main/guess.png", caption="Wrong guess! Try again!", use_column_width=True)
+            st.image(
+                "https://raw.githubusercontent.com/memegames/memegames/main/guess.png", 
+                caption="Wrong guess! Try again!", 
+                use_column_width=True
+            )
         elif guess > st.session_state.secret_number:
             st.session_state.lives -= 1
             st.warning("Too high! Try again.")
             # Show the image for a wrong guess
-            st.image("https://github.com/memegames/memegames/blob/main/guess.png", caption="Wrong guess! Try again!", use_column_width=True)
+            st.image(
+                "https://raw.githubusercontent.com/memegames/memegames/main/guess.png", 
+                caption="Wrong guess! Try again!", 
+                use_column_width=True
+            )
         else:
             st.session_state.game_over = True
             st.success(f"You got it in {st.session_state.attempts} attempts!")
