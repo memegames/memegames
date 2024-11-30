@@ -4,7 +4,7 @@ import streamlit as st
 st.title("Meme Games")
 
 # Add a dropdown menu to select the game
-game_choice = st.selectbox("Choose a Game 🎮", options=["Number Guessing Game"])
+game_choice = st.selectbox("Choose a Game 🎮", options=["","Number Guessing Game"])
 
 # Logic to display the number guessing game
 if game_choice == "Number Guessing Game":
