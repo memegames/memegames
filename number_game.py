@@ -1,12 +1,10 @@
 import random
 import streamlit as st
 
-# Set up the Streamlit app
 st.title("Meme Games")
 st.title("Guess the number")
 
-# Range slider for setting the minimum and maximum values
-st.header("Set the Range")
+#st.header("Set the Range")
 min_value, max_value = st.slider(
     "Select the range for the game:",
     min_value=1,
