@@ -33,10 +33,6 @@ if game_choice == "Rock, Paper, Scissors":
         else:
             st.error("You lose! 😢")
 
-    # Restart option
-    if st.button("Restart Game 🔄"):
-        st.experimental_rerun()
-
 elif game_choice == "Number Guessing Game":
     st.header("Number Guessing Game 🎯")
 
