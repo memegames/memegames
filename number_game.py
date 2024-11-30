@@ -6,7 +6,7 @@ st.title("Guess the number")
 
 #st.header("Set the Range")
 min_value, max_value = st.slider(
-    "Select the range for the game:",
+    "Select the number range:",
     min_value=1,
     max_value=500,
     value=(1, 100),
@@ -14,7 +14,7 @@ min_value, max_value = st.slider(
 )
 
 # Slider for setting lives
-lives = st.slider("Select the number of lives:", min_value=1, max_value=10, value=5, step=1)
+lives = st.slider("Select the number of guesses:", min_value=1, max_value=10, value=5, step=1)
 
 # Initialize session state variables for the game
 if "secret_number" not in st.session_state:
