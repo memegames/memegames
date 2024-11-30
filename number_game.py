@@ -2,7 +2,8 @@ import random
 import streamlit as st
 
 # Set up the Streamlit app
-st.title("Number Guessing Game 🎯")
+st.title("Meme Games 🎯")
+st.title("Guess the number")
 
 # Range slider for setting the minimum and maximum values
 st.header("Set the Range")
